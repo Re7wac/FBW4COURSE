@@ -1,0 +1,7 @@
+.calendar {
+    width: 250px;
+}
+
+.calendar .days button {
+    width: calc(100% / 7);
+}

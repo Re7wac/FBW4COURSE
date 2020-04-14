@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Super Mario!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css' />
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    </head>
+    <style>
+        img {
+
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+
+    <body>
+
+
+        <img src="./image/1 (1).jpg">
+
+        <script>
+            $(document).ready(function () {
+                $(document).keydown(function (key) {
+                    switch (parseInt(key.which)) {
+                        case 65:
+                            $('img').animate({ //a= left
+                                left: "-=10px"
+                            }, 'fast');
+                            break;
+                        case 83:
+                            $('img').animate({ //s is up
+                                top: "+=10px"
+                            }, 'fast')
+                            break;
+                        case 87:
+                            $('img').animate({ //w is down
+                                top: "-=10px"
+                            }, 'fast')
+                            break;
+                        case 68:
+                            $('img').animate({ //d is right
+                                left: "+=10px"
+                            }, 'fast')
+                            break;
+                        default:
+                            break;
+                    }
+                });
+            });
+
+        </script>
+    </body>
+
+</html>

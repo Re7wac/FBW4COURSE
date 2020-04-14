@@ -1,0 +1,7 @@
+.Body{
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: 1 100%;
+}

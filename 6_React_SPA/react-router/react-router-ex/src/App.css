@@ -1,0 +1,6 @@
+.container {
+    box-sizing: border-box;
+    border: 1px solid black;
+    justify-items: center;
+    align-items: center;
+}
